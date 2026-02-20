@@ -1,5 +1,9 @@
 import JobLL
 
+def fill_information():
+    pass
+
+
 def main():
 
     print("Program that takes users skills and experience as input and outputs a\nregex string")
@@ -7,7 +11,12 @@ def main():
 
     loop = True
     while loop:
-        print("options: 1.\n 2.\n")
+
+        # skills and experiences will be made as a class
+        # skills: skill name, proficientcy, additional comments
+        # experience: experience type, time started, time ended, additional comments
+        
+        print("options: 1. add skills\n 2. add experience\n")
         action = str(input("Action: "))
 
         if action == '1':
@@ -19,6 +28,7 @@ def main():
         if action == 'q':
             loop = False
 
+
     
 
     return
@@ -26,7 +36,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-def fill_information():
-    pass
 
