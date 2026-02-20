@@ -1,10 +1,20 @@
 class JobNode:
-    def __init__(self, part: str, description: str, tags: list):
+    def __init__(self, part: str, description: str, tags: list, languages: list):
         self.part = part
-        self.desscription = description
+        self.description = description
         self.tags = tags
+        self.languages = languages
     
-    def 
+    def latek_str(self):
+        pass
+    
+    def __str__(self):
+        pass
+
+    def job_match(self, tag: str):
+        pass
+    
+
     
 
 
