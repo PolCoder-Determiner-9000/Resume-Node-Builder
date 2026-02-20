@@ -1,2 +1,2 @@
-# Notes To MD
-Turn your notes into a Mark Down File.
+# Node-based Resume Builder
+Turn your projects into nodes that you can
