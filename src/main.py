@@ -1,7 +1,6 @@
 import JobLL
 
-from skills import skill
-from skills import experience
+from skills import skill, experience
 
 def fill_information():
     pass
