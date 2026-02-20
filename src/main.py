@@ -27,7 +27,14 @@ def main():
         action = str(input("Action: "))
 
         if action == '1':
-            pass
+            name = input("Enter skill name: ")
+            proficientcy = input("Enter skill proficientcy")
+            comments = input("Enter any additional comments: ")
+
+            current_skill = skill(name, proficientcy, comments)
+            
+            user_skills.append(current_skill)
+
         elif action == '2':
             pass
         
