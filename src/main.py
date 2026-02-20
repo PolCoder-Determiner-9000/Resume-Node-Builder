@@ -1,7 +1,6 @@
 import JobLL
 
-from skills import skill
-from skills import experience
+from skills import skill, experience
 
 def fill_information():
     pass
@@ -28,7 +27,7 @@ def main():
 
         if action == '1':
             name = input("Enter skill name: ")
-            proficiency = input("Enter skill proficientcy")
+            proficiency = input("Enter skill proficiency")
             comments = input("Enter any additional comments: ")
 
             current_skill = skill(name, proficiency, comments)
