@@ -28,12 +28,14 @@ def main():
 
         if action == '1':
             name = input("Enter skill name: ")
-            proficientcy = input("Enter skill proficientcy")
+            proficiency = input("Enter skill proficientcy")
             comments = input("Enter any additional comments: ")
 
-            current_skill = skill(name, proficientcy, comments)
+            current_skill = skill(name, proficiency, comments)
             
             user_skills.append(current_skill)
+            print("you have entered: ")
+            print(current_skill) # gonna need a str def 
 
         elif action == '2':
             experience_type = input("Enter title of job/experience: ")
@@ -41,13 +43,23 @@ def main():
             end_t = input("Enter end date in same format, if to present, enter present: ")
             comments = input("Enter any additional comments: ")
 
-            user_skills.append( experience(experience_type, start_t, end_t, comments) )
+            user_experience.append( experience(experience_type, start_t, end_t, comments) )
 
-        if action == 'q':
+            print("you've entered: \n", user_skills[-1])
+
+        elif action == '3':
             loop = False
+       
 
+    # now to summarize everything the user inputed
 
+    print("Summary: \n\n skills: \n")
+    for i in range( len(user_skills)):
+        print(user_skills[i])
     
+    for i in range( len (user_experience) ):
+        print(user_experience[i])
+
 
     return
 
