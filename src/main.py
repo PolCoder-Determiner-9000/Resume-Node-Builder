@@ -20,7 +20,7 @@ def main():
         # skills: skill name, proficientcy, additional comments
         # experience: experience type, time started, time ended, additional comments
         
-        print("options: 1. add skills\n 2. add experience\n")
+        print("options: 1. add skills\n 2. add experience\n 3. end\n")
 
         user_skills = []
         user_experience = []
@@ -36,8 +36,12 @@ def main():
             user_skills.append(current_skill)
 
         elif action == '2':
-            pass
-        
+            experience_type = input("Enter title of job/experience: ")
+            start_t = input("Enter start date in yyyy/mm/dd: ")
+            end_t = input("Enter end date in same format, if to present, enter present: ")
+            comments = input("Enter any additional comments: ")
+
+            user_skills.append( experience(experience_type, start_t, end_t, comments) )
 
         if action == 'q':
             loop = False
